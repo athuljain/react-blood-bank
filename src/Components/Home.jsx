@@ -6,7 +6,7 @@ export default function Home() {
       <div>
         <h2>Home</h2>
         <button onClick={(()=>nav('/donate'))}>Donate</button>
-        <button>Receive</button>
+        <button onClick={(()=>nav('/recieve'))}>Receive</button>
         <Link to={'/register'}>Register</Link>
       </div>
     );

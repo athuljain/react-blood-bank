@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
@@ -7,6 +7,8 @@ import Register from './Components/Register';
 import { myContext } from './context/context';
 import { useState } from 'react';
 import Donate from './Components/Donate';
+import Receive from './Components/Recieve';
+
 
 function App() {
 
@@ -26,6 +28,7 @@ const values={user, setUser}
   <Route path='/login' element={<Login />}/>
   <Route path='/register' element={<Register />}/>
   <Route path='/donate' element={<Donate />}/>
+  <Route path='/recieve' element={<Receive/>}/>
 
 </Routes>
 </myContext.Provider>
